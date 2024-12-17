@@ -22,8 +22,8 @@ describe('useModal Hook', () => {
   it('toggleModal 함수를 호출하면 isOpen 상태가 토글된다.', () => {
     // Arrange: 초기 상태를 false로 설정하여 useModal 훅을 렌더링
     const { result } = renderHook(() => useModal());
-
     // Act: toggleModal 함수를 호출하여 isOpen 상태를 토글
+    
     act(() => {
       result.current.toggleModal();
     });
